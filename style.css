@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    background-image: url(./img/image\ 4.png)
+}
+:root{
+    --primary-color: #FF4655;
+    --secondary-color: #0F1923;
+    --terciary-color: #FFFFFF;
+}
+body{
+    background-color: var(--secondary-color);
+}
+header{
+    background-color: var(--primary-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 3vw;
+}
+.parte-cima{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 40vw;
+    gap: 30px;
+}
+.vetor{
+    background-color: var(--secondary-color);
+    height: 65px;
+    width: 3px;
+}
+span{
+    font-family: 'Poppins', sans-serif;
+}
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding-left: 15vw;
+}
+main{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3%;
+}
+
+.titulo{
+    color: var(--primary-color);
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    height: 154px;
+    left: 64px;
+    top: 191px;
+    font-size: 9vw;
+}
+
+.titulo span {
+    color: #FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    font-size: 20px;
+    right: 0;
+    bottom: -80px;
+    font-size: 2vw;
+}
+.descricao{
+    position: relative;
+    grid-column: 2/5;
+    font-family: 'Poppins', sans-serif;
+    color: var(--terciary-color);
+    padding: 6%;
+    top: -60%;
+}
+
+
